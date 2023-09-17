@@ -90,3 +90,9 @@ li {
     background-color: #008080;
     border-radius: 50%;
 }
+.streak-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}

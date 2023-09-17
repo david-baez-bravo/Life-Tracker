@@ -12,38 +12,61 @@
     <h2>Daily Tasks</h2>
     <ul>
         <li>
-          <span class="material-symbols-outlined" style="color: #FFFF00; text-shadow: 0 0 1px #FFFF00, 0 0 2px #FFFF00;">
-            sports_martial_arts
-          </span>
-          Exercise
-          <div class="streak-view">
-            <!-- Streak view for Exercise tasks will be added here -->
-          </div>
-        </li>
-        <li>
-          <span class="material-symbols-outlined" style="color: #EE82EE; text-shadow: 0 0 1px #EE82EE, 0 0 2px #EE82EE;">
-            mindfulness
-          </span>
-          Abstinence
-        </li>
-        <li>
-          <span class="material-symbols-outlined" style="color: #39FF14; text-shadow: 0 0 1px #39FF14, 0 0 2px #39FF14;">
-            Terminal
-          </span>
-          Programming
-        </li>
-        <li>
-          <span class="material-symbols-outlined" style="color: #00FFFF; text-shadow: 0 0 1px #00FFFF, 0 0 2px #00FFFF;">
-            email
-          </span>
-          Checking Emails
-        </li>
-        <li>
-          <span class="material-symbols-outlined" style="color: #FFA500; text-shadow: 0 0 1px #FFA500, 0 0 2px #FFA500;">
-            self_improvement
-          </span>
-          Future Idealization
-        </li>
+            <span class="material-symbols-outlined" style="color: #FFFF00; text-shadow: 0 0 1px #FFFF00, 0 0 2px #FFFF00;">
+              sports_martial_arts
+            </span>
+            Exercise
+            <div class="streak-view" id="exercise-streak">
+              <!-- Streak view for Exercise tasks will be added here -->
+            </div>
+            <button onclick="addStreak(dailyTasksData[0])">Complete</button>
+            <button onclick="resetStreak(dailyTasksData[0])">Reset Streak</button>
+          </li>
+          <li>
+            <span class="material-symbols-outlined" style="color: #EE82EE; text-shadow: 0 0 1px #EE82EE, 0 0 2px #EE82EE;">
+              mindfulness
+            </span>
+            Abstinence
+            <div class="streak-view" id="abstinence-streak">
+              <!-- Streak view for Abstinence tasks will be added here -->
+            </div>
+            <button onclick="addStreak(dailyTasksData[1])">Complete</button>
+            <button onclick="resetStreak(dailyTasksData[1])">Reset Streak</button>
+          </li>
+          <!-- Add similar code for the remaining tasks -->
+          <li>
+            <span class="material-symbols-outlined" style="color: #39FF14; text-shadow: 0 0 1px #39FF14, 0 0 2px #39FF14;">
+              Terminal
+            </span>
+            Programming
+            <div class="streak-view" id="programming-streak">
+              <!-- Streak view for Programming tasks will be added here -->
+            </div>
+            <button onclick="addStreak(dailyTasksData[2])">Complete</button>
+            <button onclick="resetStreak(dailyTasksData[2])">Reset Streak</button>
+          </li>
+          <li>
+            <span class="material-symbols-outlined" style="color: #00FFFF; text-shadow: 0 0 1px #00FFFF, 0 0 2px #00FFFF;">
+              email
+            </span>
+            Checking Emails
+            <div class="streak-view" id="checking-emails-streak">
+              <!-- Streak view for Checking Emails tasks will be added here -->
+            </div>
+            <button onclick="addStreak(dailyTasksData[3])">Complete</button>
+            <button onclick="resetStreak(dailyTasksData[3])">Reset Streak</button>
+          </li>
+          <li>
+            <span class="material-symbols-outlined" style="color: #FFA500; text-shadow: 0 0 1px #FFA500, 0 0 2px #FFA500;">
+              self_improvement
+            </span>
+            Future Idealization
+            <div class="streak-view" id="future-idealization-streak">
+              <!-- Streak view for Future Idealization tasks will be added here -->
+            </div>
+            <button onclick="addStreak(dailyTasksData[4])">Complete</button>
+            <button onclick="resetStreak(dailyTasksData[4])">Reset Streak</button>
+          </li>
     </ul>
     <h2>Dynamic Daily Task</h2>
     <label for="water-input">
@@ -84,11 +107,6 @@
     <h2>Custom Tasks</h2>
     <ul>
     </ul>
-    <h2>Task Completion Views</h2>
-    <div id="percentage-views"> 
-    </div>
-    <div id="streak-view">
-    </div>
     <script src="streakView.js"></script>
 </body>
 </html>

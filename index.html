@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Tracker</title>
-    <!-- Add your CSS links for styling here -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <h1>Life Tracker</h1>
-    
-    <!-- Daily Tasks -->
     <h2>Daily Tasks</h2>
     <ul>
         <li>
@@ -19,6 +16,9 @@
             sports_martial_arts
           </span>
           Exercise
+          <div class="streak-view">
+            <!-- Streak view for Exercise tasks will be added here -->
+          </div>
         </li>
         <li>
           <span class="material-symbols-outlined" style="color: #EE82EE; text-shadow: 0 0 1px #EE82EE, 0 0 2px #EE82EE;">
@@ -44,9 +44,7 @@
           </span>
           Future Idealization
         </li>
-    </ul>      
-      
-    <!-- Dynamic Daily Task -->
+    </ul>
     <h2>Dynamic Daily Task</h2>
     <label for="water-input">
         <span class="material-symbols-outlined" style="color: #0084ff; text-shadow: 0 0 1px #0084ff, 0 0 2px #0084ff;">
@@ -56,8 +54,6 @@
     </label>
     <input type="number" id="water-input" min="0" step="0.1">
     <p>Goal: 4 liters</p>
-
-    <!-- Weekly Tasks -->
     <h2>Weekly Tasks</h2>
     <ul>
         <li>
@@ -85,22 +81,14 @@
           Look up Internship/Research Opportunities
         </li>
     </ul>
-
-    <!-- Custom Tasks -->
     <h2>Custom Tasks</h2>
     <ul>
-        <!-- You can dynamically add custom tasks here using JavaScript -->
     </ul>
-
-    <!-- Data Storage -->
-    <!-- You will need JavaScript and possibly a backend for data storage -->
-
-    <!-- Placeholder Views -->
     <h2>Task Completion Views</h2>
-    <div id="percentage-views">
-        <!-- Placeholder for percentage views (e.g., daily, weekly, monthly, yearly, all-time) -->
+    <div id="percentage-views"> 
     </div>
-
-    <!-- Add your JavaScript code for interactivity here -->
+    <div id="streak-view">
+    </div>
+    <script src="streakView.js"></script>
 </body>
 </html>

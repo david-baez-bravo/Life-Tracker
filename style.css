@@ -1,89 +1,71 @@
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(5, 8, 14); /* Set background color to black */
-    color: silver; /* Set text color to silver */
+    background-color: rgb(5, 8, 14);
+    color: silver;
 }
-
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: silver; /* Set background color to silver */
+    background-color: silver;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
     text-align: center;
-    color: silver; /* Set text color to silver */
+    color: silver;
 }
-
 h2 {
-    color: silver; /* Set text color to silver */
+    color: silver;
 }
-
 ul {
     list-style-type: none;
     padding: 0;
 }
-
 li {
     margin: 10px 0;
 }
-
-/* Daily Tasks section */
 #daily-tasks {
-    background-color: silver; /* Set background color to silver */
+    background-color: silver;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: black; /* Set text color to black (or your desired color) */
+    color: black;
 }
-
-/* Dynamic Daily Task section */
 #dynamic-daily-task {
-    background-color: silver; /* Set background color to silver */
+    background-color: silver;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: black; /* Set text color to black (or your desired color) */
+    color: black;
 }
-
 #water-input {
     width: 50px;
 }
-
-/* Weekly Tasks section */
 #weekly-tasks {
-    background-color: silver; /* Set background color to silver */
+    background-color: silver;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: black; /* Set text color to black (or your desired color) */
+    color: black;
 }
-
 #weekly-tasks img {
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
-
-/* Task Icons section */
 #task-icons {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 10px;
 }
-
 #task-icons img {
     width: 40px;
     height: 40px;
     margin: 5px;
 }
-
 .material-symbols-outlined {
     display: flex;
     justify-content: space-between;
@@ -95,5 +77,16 @@ li {
         'GRAD' 0,
         'opsz' 24;
 }
-
-/* Add more custom CSS styles as needed */
+#streak-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.streak-item {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-color: #008080;
+    border-radius: 50%;
+}
